@@ -3,6 +3,126 @@
   <head>
       <title>Home</title>
       <link rel="stylesheet" href="/abdullahwaqit.com/assets/css/style.css">
+      <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {  
+          display: grid;
+          /* grid-template-columns: 60% 40%; */
+          grid-template-columns: 2fr 1fr;
+          /* grid-template-rows: 1.8fr; */
+          gap: 0px 0px;
+          /* grid-auto-flow: row; */
+          /* grid-template-areas: */
+        }
+        
+        nav.main-nav a.cta:hover {
+            background:#4487be;
+        }
+        
+        .text-container {
+            background: #151718;
+            padding-left: 80px; /*31px*/
+        }
+        .image-container {
+            background: #151718;
+        }
+        
+        .image-container .image-text {
+            opacity: 0.86;
+            font-size: 0.9rem;
+            color: #FFFFFF;
+            margin-top: -80px;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        
+        .image-text {
+            color: white;
+            line-height: 120%;
+            margin-top: 16px;
+            margin-right: 16px;
+        }
+        
+        .image-text a {
+            color: #FEED73;
+        }
+        
+        .info-container {
+            padding-top: 124px;
+            color: white;
+        }
+        
+        .info-container .author {
+            /* font-size: 2em; */
+            /* font-family: Inter-Regular_Black; */
+            font-family: 'Inter', sans-serif;
+            font-size: 6rem;
+            color: #FFFFFF;
+            letter-spacing: -4.48px;
+            line-height: 102px;
+        }
+        
+        .info-container .role, .text-subtitle {
+            opacity: 0.64;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            letter-spacing: -0.51px;
+            margin-top: 4px;
+        }
+
+        .image-container img {
+          /*  To contain the image to the confines of the div  */
+          max-width: 100%;
+        }
+
+        .hero-image {
+          max-width: 100%; 
+          /* width: 800px; */
+          margin: auto;
+        }
+        
+        .hero-image::after {
+          display: block;
+          position: relative;
+          background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 6%, #151718 53%);
+          margin-top: -150px;
+          height: 150px;
+          width: 100%;
+          content: '';
+        }
+        
+        @media only screen and (max-width: 1100px) {
+        /* Change columns so that photo is the main thing you see*/
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+        .text-container {
+            padding-left: 21px; /*31px*/
+        }
+        
+        figure h2 {
+            display: none;
+        }
+        
+        
+        
+        .info-container {
+            padding-top: 54px;
+        }
+        
+        .info-container .author {
+            font-size: 5rem;
+            letter-spacing: -4.48px;
+            line-height: 79px;
+        }
+        
+        }
+        </style>
   </head>
   <body>
     <nav class="main-nav">
